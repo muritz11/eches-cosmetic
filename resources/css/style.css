@@ -1,0 +1,381 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template/shop-homepage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+
+
+/*********       theme             *********/
+body {
+  /*padding-top: 56px;*/
+  /*background: #FFDFEA;*/
+  /*background: linear-gradient(to bottom right, #e64398, #f172a1);*/
+  background: #111C30;
+  color: white;
+}
+
+.card{
+  transition: transform .7s, box-shadow .7s;
+  /*background: #F8A3CA;*/
+  background: #1E283B;
+  font-family: parst;
+}
+
+.card p{
+  font-size: 1.3em;
+}
+
+.shop-item{
+  min-height: 300px !important;
+}
+
+.pinky, .sect-title{
+    color: #F8A3CA !important;
+}
+
+
+
+/* define my font face */
+@font-face {
+  font-family: parst;
+  src: url("../fonts/parisienne-regular.ttf");
+}
+
+@font-face {
+  font-family: sacramento;
+  src: url("../fonts/Sacramento-regular.ttf");
+}
+
+
+@font-face {
+  font-family: yellowtail;
+  src: url("../fonts/yellowtail-regular.ttf");
+}
+
+a:focus{
+  outline: none;
+  border-bottom: 3px solid dodgerblue;
+  /*box-shadow: 0 4px 8px 0 dodgerblue;*/
+}
+
+.mybg-blue{
+  background: #a1c3d1;
+  position: relative;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+
+.sacramento{
+  font-family: sacramento;
+}
+
+.banner-title{
+  font-family: parst;
+  font-size: 2.8em;
+}
+
+
+.header{
+  /*background: #ffb3ff;*/
+  background-image: url("../images/pexels-11.jpg");
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  clip-path: circle(180vh at 30% -80vh);
+}
+
+.navbar{
+  min-height: 259px;
+}
+
+.navbar a, .header, .sect-title, .myForm, .keep a{
+  font-family: yellowtail;
+  color: #111;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.navbar a, .nav-item span, .x-kg a, .x-kg{
+  font-weight: 400;
+}
+
+.navbar-collapse a::after{
+  content: '';
+  margin: auto;
+  height: 2px;
+  transform: scaleX(0);
+  background: #EF7F8B;
+  /*padding: 1px;*/
+  display: block;
+  transition: transform .5s;
+}
+
+.navbar-collapse a:hover::after{
+  transform: scaleX(1);
+}
+
+#navbarResponsive{
+  width: 50%;
+  margin: auto;
+}
+
+#navLogo{
+  height: 90px;
+  width: 90px;
+}
+
+.dropdown-menu{
+  background: #F8A3CA;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown-menu a:hover{
+  text-decoration: none;
+}
+
+
+.carousel-img{
+  height: 600px;
+  width: 100%;
+}
+
+.card-img-top{
+  height: 100%;
+}
+
+.card-img-cont{
+    height: 160px;
+}
+
+.hr{
+  width: 10%;
+  border: 2px solid #a1c3d1;
+}
+
+.table-img{
+  height: 90px;
+  width: 90px;
+}
+
+.card:hover{
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px 0 #111;
+}
+
+.card-body{
+  transition: padding .7s;
+}
+
+.dropdown span{
+  cursor: pointer;
+}
+
+.nav-slc{
+  font-size: large;
+  color: black;
+}
+
+.mb-10{
+  margin-bottom: 10%;
+}
+
+.mydropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.nav-c::after{
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  background: #28A745;
+  color: white;
+  border-radius: 45%;
+  width: 15px;
+  height: 23px;
+
+}
+
+.nav-l::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  background: #28A745;
+  border-radius: 45%;
+  width: 10px;
+  height: 10px;
+
+}
+
+tbody tr:hover{
+
+  color: white !important;
+
+}
+
+/******************************************* form styling *****************************************/
+.myForm{
+  border: none;
+  background: transparent;
+}
+
+.myInputs{
+  background: lightgray;
+  border-radius: 20px;
+}
+
+.form-group sup{
+  color: red;
+}
+
+#msg{
+  display: none;
+}
+
+
+/************************************ pagination *****************************************/
+
+/* Pagination links */
+.pagination button {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination button.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination button:hover:not(.active) {background-color: #ddd;}
+
+
+/*************************************** socials *************************************************************/
+
+.socials a:hover .fa-facebook, .keep a:hover{
+  color: blue;
+}
+
+.socials a:hover .fa-twitter{
+  color: dodgerblue;
+}
+
+.socials a:hover .fa-instagram{
+  color: #FF6012;
+}
+
+
+
+
+/****************************** checkout ACCORDION **************************************************/
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:focus{
+  outline: 1px solid #ddd;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  /*background-color: white;*/
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
+/****************************** search button ************************************************/
+
+/* The overlay effect with black background */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 0.9); /* Black with a little bit see-through */
+}
+
+/* The content */
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* Close button */
+.overlay .closebtn {
+  float: left;
+  width: 5%;
+  padding: 15px;
+  background: #fff;
+  color: black;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay .closebtn:hover {
+  background: #ccc;
+}
+
+/* Style the search field */
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 95%;
+  background: white;
+  outline: none;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+
+.fetched_item{
+  background: #fff;
+  color: black;
+}
+
+.fetched_item:hover{
+  background: #ccc;
+}

@@ -1,0 +1,49 @@
+
+<nav class="navbar navbar-expand-lg py-4 mb-10 mt-0">
+    <div class="container row">
+        <div class="col-4 animate__animated animate__slideInLeft animate__slow">
+            <a href="index.php"><img src="resources/images/logo.jpg" class="rounded-circle" id="navLogo" alt=""></a>
+            <!--<a class="navbar-brand" href="#">Start Bootstrap</a>-->
+        </div>
+
+        <div class="col-4 text-center  animate__animated animate__slideInDown animate__slow">
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-navicon text-white-50"></i></span>
+            </button>
+            <div class="collapse text-center navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+
+                    <li class="nav-item mydropdown dropdown px-2">
+                        <span class="nav-link dropdown-toggle text-dark" data-toggle="dropdown">Shop</span>
+                        <ul class="dropdown-menu p-3 mt-0">
+                            <li><a href="product.php">Products</a></li>
+                            <!--<li class="divider"></li>-->
+                            <li><a href="index.php#collections">Collections</a></li>
+
+                            <!-- refer to funcs.php for var $order_link -->
+                            <?= isset($_SESSION['userLogged_in']) ? $order_link : '' ?>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="index.php">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-4 text-right animate__animated animate__slideInRight animate__slow">
+            <i class="fa fa-search btn nav-slc animate__animated" data-toggle="tooltip" title="search"
+               id="srch_icon"></i>
+            <a href="<?= isset($_SESSION['userLogged_in']) ? 'logout.php' : 'login.php' ?>" id="<?= isset($_SESSION['userLogged_in']) ? 'logout' : '' ?>"><i
+                    class="fa fa-user-o btn nav-slc <?= isset($_SESSION['userLogged_in']) ? 'nav-l' : '' ?> animate__animated" data-toggle="tooltip" title="<?= isset($_SESSION['userLogged_in']) ? 'Logout' : 'login/register' ?>"></i></a>
+            <a href="cart.php"><i class="fa fa-shopping-basket btn nav-slc <?= isset($_SESSION['cart']) ? 'nav-c' : '' ?> animate__animated" data-toggle="tooltip" data-content="<?= isset($_SESSION['cart']) ? $total_product : '' ?>" title="my cart"></i></a>
+        </div>
+
+    </div>
+</nav>
+

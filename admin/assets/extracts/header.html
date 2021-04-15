@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top header">
+    <div class="container">
+        <a class="navbar-brand text-dark  animate__animated animate__slideInLeft" href="#">
+            <!--<img src="../resources/images/logo.jpg" height="20" width="50" alt="">-->
+            Eche's Admin
+        </a>
+        <button class="navbar-toggler  bg-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="dropdown animate__animated animate__slideInRight">
+            <h6 class="text-muted dropdown-toggle" data-toggle="dropdown">Welcome <strong><?= $user ?></strong></h6>
+            <ul class="dropdown-menu p-3 mt-0">
+                <li><a href="logout.php">Log out</a></li>
+                <!--<li><a href="index.php#collections">Profile</a></li>-->
+            </ul>
+        </div>
+
+    </div>
+</nav>

@@ -1,0 +1,114 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template/shop-homepage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+  background: #ECECF6;
+}
+
+.container{
+  max-width: 100%;
+}
+
+
+.header{
+  background: #ECECF6;
+}
+
+.sidebar .navbar-collapse{
+  position: fixed;
+}
+
+.cont{
+  background: #DBDAF9;
+  padding: 20px;
+  min-height: 300px;
+  overflow: auto;
+  /*margin-bottom: 100px;*/
+}
+
+.nav-item .nav-link{
+  color: #9C9AC9;
+  font-weight: bold;
+  width: 100%;
+  padding-right: 60px;
+}
+
+.nav-item .nav-link:hover{
+  color: #5B5BEA;
+  /*border-right: #5B5BEA;*/
+}
+
+.nav-link i{
+  margin-right: 10px;
+}
+
+.card{
+  background: #E9E9F5;
+}
+
+/*border-raduis*/
+.radii{
+  border-radius: 10px;
+}
+
+#msg{
+  display: none;
+}
+
+
+#add-cat:hover{
+  text-decoration: underline;
+  color: #007BFF;
+  cursor: pointer;
+}
+
+.after{
+  display: none;
+}
+
+.form{
+  width: 80%;
+  margin: auto;
+  display: none;
+}
+
+.table-img{
+  height: 90px;
+  width: 90px;
+}
+
+.marg{
+  margin-top: 5px;
+}
+
+.prod-img{
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.card-body{
+  border: none;
+  background: transparent;
+}
+
+.myInputs{
+  background: lightgray;
+  border-radius: 20px;
+}
+
+.form-group sup{
+  color: red;
+}
+
+.dropdown{
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu{
+  background: #ECECF6;
+  display: block;
+}
